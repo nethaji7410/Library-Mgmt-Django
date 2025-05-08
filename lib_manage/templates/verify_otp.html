@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Verify OTP</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}"></head>
+<body>
+    <div class="signup-login">
+        <div class="signup-box">
+            <form method="post">
+                {% csrf_token %}
+                <div class="heading">Enter OTP</div>
+                <div class="line"></div>
+                <div class="field">
+                    <b>OTP</b>
+                    <input type="text" name="otp" class="input" placeholder="Enter OTP sent to your email" required>
+                </div>
+                <div class="field">
+                    <input type="submit" class="submit-button" value="Verify OTP">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

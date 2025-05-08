@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% extends "index.html" %}
+{% load static %}
+
+
+{% block main_content %}
+<div class="jumbotron">
+    <div class="container">
+        <img
+            src="{% static 'image.png' %}" height="45" width="20%" style="margin-right: 20px;"
+            class="img-fluid rounded float-start"
+            alt="image"/>
+        <h1 class="dispaly-4">Hello, readers!</h1>
+        <p>Welcome to the library management system.</p>
+        <button type="button" class="btn btn-primary">Browse our collection >></button>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>How a Library Management System Works:</h2>
+        <p>In a library system like Koha, librarians can perform various tasks such as adding new books to the catalogue, updating existing records, checking items in and out, and managing user accounts. Library users can search for materials using the OPAC, place holds on items, and view their borrowing history..</p>
+      </div>
+      <div class="col">
+        <h2>Benefits of using:</h2>
+    <ul>
+        <ol>
+        <li><p>Efficiency: Streamlines library operations and reduces manual tasks.</p></li>
+        <li><p>Accessibility: Provides users with easy access to library resources through the online catalogue..</p></li>
+        <li><p>Accuracy: Helps maintain accurate records of library materials and user accounts.</p></li>
+        </ol>
+    </ul>
+      </div>
+      <div class="col">
+        <h2>E -Library Management System</h2>
+        <ul>
+            <li>
+                <p>Add book information.</p>
+            </li>
+            <li><p>Display book information.</p></li>
+            <li><p><p>To list all books of a given author.</p></p></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+<footer class="container">
+        <p>@ City Library 2025</p>
+</footer>
+
+{% endblock %}
